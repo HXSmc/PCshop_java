@@ -76,7 +76,8 @@ public class run {
                         } else if (customerChoice == 2) { // Order History
                             System.out.println("Order History: ");
                             for (Order order : customer.viewOrderHistory()) {
-                                System.out.println(order);
+                                System.out.println("order ID : " + order.getOrderId());
+                                System.out.println("Price : " + order.getTotalAmount());
                             }
                         } else if (customerChoice == 3) {
                             break;
@@ -91,7 +92,6 @@ public class run {
                 System.out.print("Enter Password: ");
                 String password = scanner.nextLine();
                 customer = new Customer(++customerIdCounter, username, password);
-                System.out.println("your customer ID is : " + customer.getCustomerId());
                 customers.add(customer);
                 customer = null;
                 System.out.println("Customer created successfully!");
