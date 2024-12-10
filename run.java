@@ -91,7 +91,7 @@ public class run {
                 System.out.print("Enter Password: ");
                 String password = scanner.nextLine();
                 customer = new Customer(++customerIdCounter, username, password);
-                System.out.println(customer.getCustomerId());
+                System.out.println("your customer ID is : " + customer.getCustomerId());
                 customers.add(customer);
                 customer = null;
                 System.out.println("Customer created successfully!");
