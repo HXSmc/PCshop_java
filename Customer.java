@@ -13,7 +13,7 @@ public class Customer {
     private String username;
     private int customerId;
     ArrayList<Order> orders = new ArrayList<Order>();
-    public Customer(int customerId,String password, String username){
+    public Customer(int customerId,String username, String password){
         this.customerId = customerId;
         this.password = password;
         this.username = username;
